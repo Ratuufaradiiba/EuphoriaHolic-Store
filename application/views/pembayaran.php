@@ -59,7 +59,7 @@
                     </select>
                 </div>
 
-                <button type="submit" class="btn btn-sm btn-primary mb-3">PESAN</button>
+                <button type="submit" class="btn btn-sm btn-danger mb-3">PESAN</button>
 
             </form>
 
