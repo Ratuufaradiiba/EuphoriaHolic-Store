@@ -29,9 +29,8 @@
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Kategori Produk
+                PAKAIAN PRIA
             </div>
-
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
@@ -63,6 +62,11 @@
                     <i class="fas fa-fw fa-tshirt"></i>
                     <span>Batik Pria</span></a>
             </li>
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                PAKAIAN WANITA
+            </div>
 
 
             <li class="nav-item">
