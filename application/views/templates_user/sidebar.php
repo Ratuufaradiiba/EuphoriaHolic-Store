@@ -34,31 +34,31 @@
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url('kategori/tshirt_pria') ?>">
+                <a class="nav-link" href="<?php echo base_url('welcome/tshirt_pria') ?>">
                     <i class="fas fa-fw fa-tshirt"></i>
                     <span>T-Shirt Pria</span></a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url('kategori/kemeja_pria') ?>">
+                <a class="nav-link" href="<?php echo base_url('welcome/kemeja_pria') ?>">
                     <i class="fas fa-fw fa-tshirt"></i>
                     <span>Kemeja Pria</span></a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url('kategori/jaket_pria') ?>">
+                <a class="nav-link" href="<?php echo base_url('welcome/jaket_pria') ?>">
                     <i class="fas fa-fw fa-tshirt"></i>
                     <span>Jaket Pria</span></a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url('kategori/hoodie_pria') ?>">
+                <a class="nav-link" href="<?php echo base_url('welcome/hoodie_pria') ?>">
                     <i class="fas fa-fw fa-tshirt"></i>
                     <span>Hoodie Pria</span></a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url('kategori/batik_pria') ?>">
+                <a class="nav-link" href="<?php echo base_url('welcome/batik_pria') ?>">
                     <i class="fas fa-fw fa-tshirt"></i>
                     <span>Batik Pria</span></a>
             </li>
@@ -70,7 +70,7 @@
 
 
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url('kategori/pakaian_wanita') ?>">
+                <a class="nav-link" href="<?php echo base_url('welcome/pakaian_wanita') ?>">
                     <i class="fas fa-fw fa-tshirt"></i>
                     <span>Pakaian Wanita</span></a>
             </li>
@@ -100,20 +100,6 @@
                         <i class="fa fa-bars"></i>
                     </button>
 
-                    <!-- Topbar Search -->
-                    <form
-                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                        <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Mau cari apa..."
-                                aria-label="Search" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-danger" type="button">
-                                    <i class="fas fa-search fa-sm"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
 
@@ -142,23 +128,23 @@
                         </li>
 
                         <div class="navbar">
+                            <a class="na navbar-nav navbar-left" href="<?= base_url('profiluser/myprofil'); ?>">Profil Saya </a>
+                            <div class="topbar-divider d-none d-sm-block"></div>
+
                             <ul class="nav navbar-nav navbar-right">
                                 <li>
                                     <?php
                                     $keranjang = 'Keranjang Belanja: ' .$this->cart->total_items(). ' Barang' ?>
 
-                                    <?php echo anchor('dashboard/detail_keranjang', $keranjang ) ?>
+                                    <?php echo anchor('welcome/detail_keranjang', $keranjang ) ?>
                                 </li>
                             </ul>
 
                             <div class="topbar-divider d-none d-sm-block"></div>
 
                                 <ul class="na navbar-nav navbar-right">
-                                    <?php if(!empty($this->session->userdata('username'))) { ?>
-                                        <li><div>Selamat Datang <? $username; ?></div></li>
-                                        <li class="ml-2"><?php echo anchor('auth/logout', 'Logout') ?></li>
-                                    <?php } ?>
-
+                                <li><div>Selamat Datang <b> <?php echo $this->session->userdata('username') ?> </b></div></li>
+                                    <li class="ml-2"><?php echo anchor('auth/logout', 'Logout') ?></li>
                                 </ul>
 
                         </div>
