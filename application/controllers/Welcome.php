@@ -3,6 +3,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Welcome extends CI_Controller {
 
+	function __construct()
+    {
+        parent::__construct();
+        $this->load->model(['ModelUser', 'ModelBarang']);
+    }
+
+
 	/**
 	 * Index Page for this controller.
 	 *
@@ -21,9 +28,21 @@ class Welcome extends CI_Controller {
 	public function index()
     {
         $data['barang'] = $this->ModelBarang->tampil_data()->result();
-        $this->load->view('templates/header');
-        $this->load->view('templates/sidebar');
-        $this->load->view('dashboard', $data);
-        $this->load->view('templates/footer');
-    }
+		if ($this->session->userdata('user')) {
+            $user = $this->ModelUser->cekData(['username' => $this->session->userdata('username')])->row_array();
+
+            $data['user'] = $user['username'];
+
+            $this->load->view('templates_user/header', $data);
+            $this->load->view('dashboard', $data);
+            $this->load->view('templates_user/sidebar');
+            $this->load->view('templates_user/footer', $data);
+        } else {
+            $data['user'] = 'Pengunjung';
+            $this->load->view('templates_user/header', $data);
+            $this->load->view('dashboard', $data);
+            $this->load->view('templates_user/sidebar');
+            $this->load->view('templates_user/footer', $data);
+        }
+	}
 }
