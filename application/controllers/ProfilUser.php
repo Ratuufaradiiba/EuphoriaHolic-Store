@@ -44,6 +44,10 @@ class ProfilUser extends CI_Controller{
             'required' => 'Nama tidak Boleh Kosong'
         ]);
 
+        $this->form_validation->set_rules('alamat','Alamat Lengkap','required|trim',[
+            'required' => 'Alamat tidak boleh Kosong'
+        ]);
+
         if ($this->form_validation->run() == false) {
             $this->load->view('templates_user/header', $data);
             $this->load->view('templates_user/sidebar');
@@ -52,6 +56,7 @@ class ProfilUser extends CI_Controller{
         } else {
             $nama = $this->input->post('nama', true);
             $username = $this->input->post('username', true);
+            $alamat = $this->input->post('alamat', true);
 
             //jika ada gambar yang akan diupload
             $upload_image = $_FILES['image']['name'];
@@ -80,6 +85,7 @@ class ProfilUser extends CI_Controller{
 
             $this->db->set('nama', $nama);
             $this->db->where('username', $username);
+            $this->db->set('alamat', $alamat);
             $this->db->update('user');
 
             $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-message" role="alert">Profil Berhasil diubah </div>');
