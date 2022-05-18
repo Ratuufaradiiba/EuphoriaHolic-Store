@@ -69,4 +69,9 @@ class ModelInvoice extends CI_Model{
         $this->db->from('pesanan');
         return $this->db->get()->row($row);
     }
+
+    public function simpanPesanan($data)
+    {
+        $this->db->insert('pesanan', $data);
+    }
 }
