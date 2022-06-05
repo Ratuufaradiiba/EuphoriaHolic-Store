@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 19 Apr 2022 pada 06.54
+-- Generation Time: 05 Jun 2022 pada 07.19
 -- Versi Server: 10.1.30-MariaDB
 -- PHP Version: 5.6.33
 
@@ -43,9 +43,9 @@ CREATE TABLE `barang` (
 --
 
 INSERT INTO `barang` (`id_brg`, `nama_brg`, `keterangan`, `kategori`, `harga`, `stok`, `gambar`) VALUES
-(1, 'Adidas', 'Bahan 100% dari cotton single jersey yang terasa lembut di badan.', 'T-Shirt Pria', 312000, 1231, 'kaosp_2.jpg'),
-(2, 'Geof Maxx', 'Kaos dengan Kualitas yang tidak diragukan lagi.', 'T-Shirt Pria', 70000, 4322, 'kaosp_3.jpg'),
-(3, 'Screamous', 'Kainnya memiliki kualitas yang sangat baik dengan sentuhan akhir yang sempurna', 'T-Shirt Pria', 76000, 43, 'kaosp_4.jpg'),
+(1, 'Adidas', 'Bahan 100% dari cotton single jersey yang terasa lembut di badan.', 'T-Shirt Pria', 312000, 1224, 'kaosp_2.jpg'),
+(2, 'Geof Maxx', 'Kaos dengan Kualitas yang tidak diragukan lagi.', 'T-Shirt Pria', 70000, 4320, 'kaosp_3.jpg'),
+(3, 'Screamous', 'Kainnya memiliki kualitas yang sangat baik dengan sentuhan akhir yang sempurna', 'T-Shirt Pria', 76000, 42, 'kaosp_4.jpg'),
 (4, 'Walexa ', ' Merek Jepang yang diciptakan dua puluh tahun lalu ini telah berhasil menggabungkan aksesibilitas ke produk organik.', 'T-Shirt Pria', 125000, 54, 'kaosp5.jpg'),
 (5, '180 Degrees', 'Regular fit tidak terlalu ketat juga tidak terlalu baggy. Cocok untuk penampilan kasual Anda sehari-hari.', 'T-Shirt Pria', 45000, 432, 'kaosp6.jpg'),
 (6, 'Levis', 'Dengan beragam pilihan model dan bahan yang nyaman dipakai, kemeja ini dapat diandalkan untuk menemani aktivitas padatmu sepanjang hari.', 'Kemeja Pria', 140000, 52, 'kemejap2.jpg'),
@@ -85,7 +85,7 @@ INSERT INTO `barang` (`id_brg`, `nama_brg`, `keterangan`, `kategori`, `harga`, `
 (74, 'Clouwny Checkered Mermaid Skirt', 'Bergaya kekinian ala street fashion Korea Kalau Anda mengikuti dan menyukai tren fashion ala Korea Selatan, rok ini pasti familier untuk Anda. ', 'Rok Wanita', 225000, 998, 'rokw2-fococlipping-standard.png'),
 (75, 'Miyoshi Jeans Short Skirt', 'Unik dengan ikat pinggang berbentuk lengan kemeja Anda pasti pernah mengikatkan jaket pada pinggang, bukan? Ini dia keunikan rok mini bergaya feminin yang satu ini. Ikat pinggangnya memiliki model seperti lengan kemeja yang t', 'Rok Wanita', 329900, 75, 'rokw3-fococlipping-standard.png'),
 (76, 'Love, Bonito Daley Asymmetrical Ruffle Skirt', 'Lebih feminin dan mewah, rasanya seperti pakai gaun Daley Asymmetrical Ruffle Skirt dari Love, Bonito ini memiliki tampilan yang cantik dan mewah. Rok ini berpotongan asimetris yang pendek pada bagian depan dan panjang di bel', 'Rok Wanita', 490000, 7432, 'rokw4-fococlipping-standard.png'),
-(77, 'Riana Cardigan', 'Simpel dan berwarna netral, cocok dipakai ke mana saja Untuk produk terakhir di daftar saya, saya akan merekomendasikan blouse yang satu ini. Produk ini terlihat sangat simpel dan tersedia dalam tiga pilihan warna netral', 'Cardigan Wanita', 63000, 543, 'cardiw1-fococlipping-HD.png'),
+(77, 'Riana Cardigan', 'Simpel dan berwarna netral, cocok dipakai ke mana saja Untuk produk terakhir di daftar saya, saya akan merekomendasikan blouse yang satu ini. Produk ini terlihat sangat simpel dan tersedia dalam tiga pilihan warna netral', 'Cardigan Wanita', 63000, 542, 'cardiw1-fococlipping-HD.png'),
 (78, 'ELLIPSES INC Set Cardigan Tie Dye', 'Bergaya trendi bersama tren tie-dye Tak dapat dimungkiri lagi, beberapa tahun belakangan ini eksistensi dari busana tie-dye sedang digemari oleh banyak orang. Nah, untuk Anda yang ingin mengikuti tren saat ini, produk dari EL', 'Cardigan Wanita', 200000, 432, 'cardiw2.png'),
 (79, 'Rodeo Quinza Outer Batik', 'Corak batiknya tampilkan pesona khas Indonesia Solusi tepat bagi Anda yang menginginkan produk dengan corak khas Indonesia adalah produk keluaran Rodeo ini. Cardigan ini memiliki model tanpa lengan dengan balutan motif batik.', 'Cardigan Wanita', 369900, 323, 'cardiw3.png'),
 (80, 'Clouwny Levon Long Outer', 'Cardigan kerah lapel ciptakan preppy look yang menawan Lengkapi outfit ngantor Anda dengan produk dari Clouwny ini, yuk! Cardigan ini memiliki model lengan panjang dengan detail kerah lapel yang lebar. Ada tiga warna yang bis', 'Cardigan Wanita', 229000, 3232, 'cardiw4.png'),
@@ -110,7 +110,48 @@ CREATE TABLE `invoice` (
 --
 
 INSERT INTO `invoice` (`id`, `nama`, `alamat`, `tgl_pesan`, `batas_bayar`) VALUES
-(13, 'Alana van Debora', '', '2022-04-15 20:46:09', '2022-04-16 20:46:09');
+(18, 'Alana van Debora', '', '2022-04-23 16:44:03', '2022-04-24 16:44:03'),
+(19, 'Alana van Debora', '', '2022-05-24 10:32:57', '2022-05-25 10:32:57'),
+(20, 'Alana van Debora', '', '2022-05-24 10:33:52', '2022-05-25 10:33:52'),
+(21, 'Alana van Debora', '', '2022-05-24 10:34:27', '2022-05-25 10:34:27'),
+(22, 'Alana van Debora', '', '2022-05-24 10:34:41', '2022-05-25 10:34:41'),
+(23, 'Alana van Debora', '', '2022-05-24 10:35:00', '2022-05-25 10:35:00'),
+(24, 'Alana van Debora', '', '2022-05-24 10:35:32', '2022-05-25 10:35:32'),
+(25, 'Alana van Debora', '', '2022-05-24 10:36:07', '2022-05-25 10:36:07'),
+(26, 'Alana van Debora', '', '2022-05-24 10:37:20', '2022-05-25 10:37:20'),
+(27, 'Alana van Debora', '', '2022-05-24 10:38:26', '2022-05-25 10:38:26'),
+(28, 'Alana van Debora', '', '2022-05-24 10:38:36', '2022-05-25 10:38:36'),
+(29, 'Alana van Debora', '', '2022-05-24 10:39:01', '2022-05-25 10:39:01'),
+(30, 'Alana van Debora', '', '2022-05-24 10:41:01', '2022-05-25 10:41:01'),
+(31, 'Alana van Debora', '', '2022-05-24 10:42:30', '2022-05-25 10:42:30'),
+(32, 'Alana van Debora', '', '2022-05-24 10:48:53', '2022-05-25 10:48:53'),
+(33, 'Alana van Debora', '', '2022-05-24 10:49:27', '2022-05-25 10:49:27'),
+(34, 'Alana van Debora', '', '2022-05-24 10:50:58', '2022-05-25 10:50:58'),
+(35, 'Alana van Debora', '', '2022-05-24 10:51:47', '2022-05-25 10:51:47'),
+(36, 'Alana van Debora', '', '2022-05-24 10:52:31', '2022-05-25 10:52:31'),
+(37, 'Alana van Debora', '', '2022-05-24 10:52:43', '2022-05-25 10:52:43'),
+(38, 'Alana van Debora', '', '2022-05-24 10:52:52', '2022-05-25 10:52:52'),
+(39, 'Alana van Debora', '', '2022-05-24 11:04:03', '2022-05-25 11:04:03'),
+(40, 'Alana van Debora', '', '2022-05-24 11:05:07', '2022-05-25 11:05:07'),
+(41, 'Alana van Debora', '', '2022-05-24 11:05:56', '2022-05-25 11:05:56'),
+(42, 'Alana van Debora', '', '2022-05-24 11:06:24', '2022-05-25 11:06:24'),
+(43, 'Alana van Debora', '', '2022-05-24 11:08:13', '2022-05-25 11:08:13'),
+(44, 'Alana van Debora', '', '2022-05-24 11:08:17', '2022-05-25 11:08:17'),
+(45, 'Alana van Debora', '', '2022-05-24 11:08:52', '2022-05-25 11:08:52'),
+(46, 'Alana van Debora', '', '2022-05-24 11:09:08', '2022-05-25 11:09:08'),
+(47, 'Alana van Debora', '', '2022-05-24 11:10:09', '2022-05-25 11:10:09'),
+(48, 'Alana van Debora', '', '2022-05-24 11:14:31', '2022-05-25 11:14:31'),
+(49, 'Alana van Debora', 'Bekasi, Jawa Barat', '2022-06-01 20:39:07', '2022-06-02 20:39:07'),
+(50, 'Alana van Debora', 'Bekasi, Jawa Barat', '2022-06-01 20:44:07', '2022-06-02 20:44:07'),
+(51, 'Alana van Debora', 'Bekasi, Jawa Barat', '2022-06-01 20:44:35', '2022-06-02 20:44:35'),
+(52, 'Alana van Debora', 'Bekasi, Jawa Barat', '2022-06-01 20:44:39', '2022-06-02 20:44:39'),
+(53, 'Alana van Debora', 'Bekasi, Jawa Barat', '2022-06-01 20:44:40', '2022-06-02 20:44:40'),
+(54, 'Alana van Debora', 'Bekasi, Jawa Barat', '2022-06-01 20:46:04', '2022-06-02 20:46:04'),
+(55, 'Alana van Debora', 'Bekasi, Jawa Barat', '2022-06-01 20:47:28', '2022-06-02 20:47:28'),
+(56, 'Alana van Debora', 'Bekasi, Jawa Barat', '2022-06-01 20:49:13', '2022-06-02 20:49:13'),
+(57, 'Alana van Debora', 'Bekasi, Jawa Barat', '2022-06-01 20:51:23', '2022-06-02 20:51:23'),
+(58, 'Alana van Debora', 'Bekasi, Jawa Barat', '2022-06-01 20:51:36', '2022-06-02 20:51:36'),
+(59, 'Alana van Debora', 'Bekasi, Jawa Barat', '2022-06-01 20:51:46', '2022-06-02 20:51:46');
 
 -- --------------------------------------------------------
 
@@ -122,20 +163,23 @@ CREATE TABLE `pesanan` (
   `id` int(11) NOT NULL,
   `id_invoice` int(11) NOT NULL,
   `id_brg` int(11) NOT NULL,
-  `id_user` int(11) NOT NULL,
   `nama_brg` varchar(50) NOT NULL,
   `jumlah` int(3) NOT NULL,
   `harga` int(10) NOT NULL,
-  `status` enum('Belum Bayar','Sudah Bayar','','') CHARACTER SET utf8mb4 NOT NULL DEFAULT 'Belum Bayar',
-  `tgl_pesan` datetime NOT NULL
+  `status` enum('Belum Bayar','Sudah Bayar','','') CHARACTER SET utf8mb4 NOT NULL DEFAULT 'Belum Bayar'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data untuk tabel `pesanan`
 --
 
-INSERT INTO `pesanan` (`id`, `id_invoice`, `id_brg`, `id_user`, `nama_brg`, `jumlah`, `harga`, `status`, `tgl_pesan`) VALUES
-(26, 13, 1, 0, 'Adidas', 1, 312000, '', '0000-00-00 00:00:00');
+INSERT INTO `pesanan` (`id`, `id_invoice`, `id_brg`, `nama_brg`, `jumlah`, `harga`, `status`) VALUES
+(32, 18, 1, 'Adidas', 1, 312000, 'Belum Bayar'),
+(33, 19, 1, 'Adidas', 1, 312000, 'Belum Bayar'),
+(34, 26, 1, 'Adidas', 1, 312000, 'Belum Bayar'),
+(35, 30, 2, 'Geof Maxx', 1, 70000, 'Belum Bayar'),
+(36, 31, 3, 'Screamous', 1, 76000, 'Belum Bayar'),
+(37, 49, 1, 'Adidas', 1, 312000, 'Belum Bayar');
 
 --
 -- Trigger `pesanan`
@@ -175,7 +219,7 @@ INSERT INTO `user` (`id`, `nama`, `alamat`, `username`, `password`, `image`, `ro
 (2, 'user', '', 'user', '123', '', 2, 0, 0),
 (7, 'Queen Faradiba', '', 'QueenFrdb', '123', '', 2, 0, 0),
 (11, 'Queen Faradiba Al Isra Syam', '', 'QueenFrdb', '123', 'default.jpg', 2, 0, 1649439074),
-(12, 'Alana van Debora', 'Bandung, Jawa Barat', 'Alana', '123', 'pro1649947748.jpg', 2, 0, 1649480284);
+(12, 'Alana van Debora', 'Bandung, Jawa Barat', 'Alana', '123', 'pro1650700603.png', 2, 0, 1649480284);
 
 --
 -- Indexes for dumped tables
@@ -197,7 +241,10 @@ ALTER TABLE `invoice`
 -- Indexes for table `pesanan`
 --
 ALTER TABLE `pesanan`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `id_brg` (`id_brg`),
+  ADD KEY `status` (`status`),
+  ADD KEY `id_invoice` (`id_invoice`);
 
 --
 -- Indexes for table `user`
@@ -219,19 +266,30 @@ ALTER TABLE `barang`
 -- AUTO_INCREMENT for table `invoice`
 --
 ALTER TABLE `invoice`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
 
 --
 -- AUTO_INCREMENT for table `pesanan`
 --
 ALTER TABLE `pesanan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
+--
+
+--
+-- Ketidakleluasaan untuk tabel `pesanan`
+--
+ALTER TABLE `pesanan`
+  ADD CONSTRAINT `pesanan_ibfk_1` FOREIGN KEY (`id_brg`) REFERENCES `barang` (`id_brg`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `pesanan_ibfk_2` FOREIGN KEY (`id_invoice`) REFERENCES `invoice` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
