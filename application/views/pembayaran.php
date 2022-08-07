@@ -18,16 +18,16 @@
 
             <h3>Input Alamat Pengiriman dan Pembayaran</h3>
 
-            <form method="post" action="<?php echo base_url() ?>index.php/dashboard/proses_pesanan">
+            <form method="post" action="<?php echo base_url() ?>dashboard/proses_pesanan">
                 
                 <div class="form-group">
                     <label>Nama Lengkap</label>
-                    <input type="text" name="nama" placeholder="Nama Lengkap Anda" class="form-control">
+                    <input type="text" name="nama" placeholder="Nama Lengkap Anda" class="form-control" value="<?= $user; ?>" readonly>
                 </div>
 
                 <div class="form-group">
                     <label>Alamat Lengkap</label>
-                    <input type="text" name="alamat" placeholder="Alamat Lengkap Anda" class="form-control">
+                    <input type="text" name="alamat" placeholder="Alamat Lengkap Anda" class="form-control" >
                 </div>
 
                 <div class="form-group">
